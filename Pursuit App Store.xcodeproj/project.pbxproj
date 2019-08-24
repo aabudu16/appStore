@@ -14,6 +14,8 @@
 		85EBCD592311CC4100DD5A5F /* Pursuit_App_StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD582311CC4100DD5A5F /* Pursuit_App_StoreTests.swift */; };
 		85EBCD642311CC4100DD5A5F /* Pursuit_App_StoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD632311CC4100DD5A5F /* Pursuit_App_StoreUITests.swift */; };
 		85EBCD722311CC7600DD5A5F /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD712311CC7600DD5A5F /* loginView.swift */; };
+		85EBCD752311F5CA00DD5A5F /* UITextField-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD742311F5CA00DD5A5F /* UITextField-Extension.swift */; };
+		85EBCD782311F78700DD5A5F /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD772311F78700DD5A5F /* UIButton-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		85EBCD632311CC4100DD5A5F /* Pursuit_App_StoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pursuit_App_StoreUITests.swift; sourceTree = "<group>"; };
 		85EBCD652311CC4100DD5A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85EBCD712311CC7600DD5A5F /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		85EBCD742311F5CA00DD5A5F /* UITextField-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField-Extension.swift"; sourceTree = "<group>"; };
+		85EBCD772311F78700DD5A5F /* UIButton-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				85EBCD432311CC3F00DD5A5F /* AppDelegate.swift */,
-				85EBCD712311CC7600DD5A5F /* loginView.swift */,
-				85EBCD452311CC3F00DD5A5F /* LoginViewController.swift */,
+				85EBCD762311F74E00DD5A5F /* Custom Extenstions */,
+				85EBCD732311F58300DD5A5F /* Login View Files */,
 				85EBCD4A2311CC4100DD5A5F /* Assets.xcassets */,
 				85EBCD4C2311CC4100DD5A5F /* LaunchScreen.storyboard */,
 				85EBCD4F2311CC4100DD5A5F /* Info.plist */,
@@ -123,6 +127,24 @@
 				85EBCD652311CC4100DD5A5F /* Info.plist */,
 			);
 			path = "Pursuit App StoreUITests";
+			sourceTree = "<group>";
+		};
+		85EBCD732311F58300DD5A5F /* Login View Files */ = {
+			isa = PBXGroup;
+			children = (
+				85EBCD712311CC7600DD5A5F /* loginView.swift */,
+				85EBCD452311CC3F00DD5A5F /* LoginViewController.swift */,
+			);
+			path = "Login View Files";
+			sourceTree = "<group>";
+		};
+		85EBCD762311F74E00DD5A5F /* Custom Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				85EBCD742311F5CA00DD5A5F /* UITextField-Extension.swift */,
+				85EBCD772311F78700DD5A5F /* UIButton-Extension.swift */,
+			);
+			path = "Custom Extenstions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +280,8 @@
 				85EBCD462311CC3F00DD5A5F /* LoginViewController.swift in Sources */,
 				85EBCD722311CC7600DD5A5F /* loginView.swift in Sources */,
 				85EBCD442311CC3F00DD5A5F /* AppDelegate.swift in Sources */,
+				85EBCD782311F78700DD5A5F /* UIButton-Extension.swift in Sources */,
+				85EBCD752311F5CA00DD5A5F /* UITextField-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
