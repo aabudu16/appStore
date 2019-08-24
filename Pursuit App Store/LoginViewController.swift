@@ -9,13 +9,20 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    var loginView:LoginView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        view.backgroundColor = .red
+        setupViewcontroller()
     }
 
-
+    func setupViewcontroller(){
+        let mainView = LoginView(frame:self.view.frame)
+        self.loginView = mainView
+        self.view.addSubview(loginView)
+        loginView.translatesAutoresizingMaskIntoConstraints = false
+        loginView.backgroundColor = .blue
+        //need constraints for the login view.
+    }
 }
 
