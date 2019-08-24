@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		85EBCD442311CC3F00DD5A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD432311CC3F00DD5A5F /* AppDelegate.swift */; };
-		85EBCD462311CC3F00DD5A5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD452311CC3F00DD5A5F /* ViewController.swift */; };
+		85EBCD462311CC3F00DD5A5F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD452311CC3F00DD5A5F /* LoginViewController.swift */; };
 		85EBCD4B2311CC4100DD5A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85EBCD4A2311CC4100DD5A5F /* Assets.xcassets */; };
 		85EBCD4E2311CC4100DD5A5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85EBCD4C2311CC4100DD5A5F /* LaunchScreen.storyboard */; };
 		85EBCD592311CC4100DD5A5F /* Pursuit_App_StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD582311CC4100DD5A5F /* Pursuit_App_StoreTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		85EBCD402311CC3F00DD5A5F /* Pursuit App Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pursuit App Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85EBCD432311CC3F00DD5A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85EBCD452311CC3F00DD5A5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85EBCD452311CC3F00DD5A5F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		85EBCD4A2311CC4100DD5A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85EBCD4D2311CC4100DD5A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85EBCD4F2311CC4100DD5A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			children = (
 				85EBCD432311CC3F00DD5A5F /* AppDelegate.swift */,
 				85EBCD712311CC7600DD5A5F /* loginView.swift */,
-				85EBCD452311CC3F00DD5A5F /* ViewController.swift */,
+				85EBCD452311CC3F00DD5A5F /* LoginViewController.swift */,
 				85EBCD4A2311CC4100DD5A5F /* Assets.xcassets */,
 				85EBCD4C2311CC4100DD5A5F /* LaunchScreen.storyboard */,
 				85EBCD4F2311CC4100DD5A5F /* Info.plist */,
@@ -255,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85EBCD462311CC3F00DD5A5F /* ViewController.swift in Sources */,
+				85EBCD462311CC3F00DD5A5F /* LoginViewController.swift in Sources */,
 				85EBCD722311CC7600DD5A5F /* loginView.swift in Sources */,
 				85EBCD442311CC3F00DD5A5F /* AppDelegate.swift in Sources */,
 			);
