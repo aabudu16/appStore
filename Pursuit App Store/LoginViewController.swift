@@ -15,7 +15,11 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         setupViewcontroller()
     }
-
+// to hide the top view of the navigation controller and enable the background image to fill the entire screen
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
     func setupViewcontroller(){
         let mainView = LoginView(frame:self.view.frame)
         self.loginView = mainView
