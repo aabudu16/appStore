@@ -10,7 +10,9 @@ import UIKit
 
 class LoginView: UIView {
     
-   
+    var loginAction: (() -> Void)?
+    var signupAction: (() -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -108,11 +110,11 @@ class LoginView: UIView {
         return stackView
     }
     @objc func loginButtonAction(){
-        print("login button")
+        loginAction?()
     }
     
     @objc func signupButtonAction(){
-        print("sign up button")
+        signupAction?()
     }
     
     required init?(coder aDecoder: NSCoder) {

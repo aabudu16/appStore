@@ -27,6 +27,16 @@ class LoginViewController: UIViewController {
         loginView.translatesAutoresizingMaskIntoConstraints = false
         loginView.backgroundColor = .blue
         //need constraints for the login view.
+        
+        loginView.loginAction = loginPressed
+        loginView.signupAction = signupPressed
+    }
+    
+    func loginPressed(){
+        print("login pressed")
+    }
+   func signupPressed(){
+    print("signup pressed")
     }
 }
 
