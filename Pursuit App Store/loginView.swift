@@ -9,6 +9,8 @@
 import UIKit
 
 class LoginView: UIView {
+    
+   
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -41,6 +43,8 @@ class LoginView: UIView {
         textField.layer.borderWidth = 5
         textField.layer.borderColor = UIColor.gray.cgColor
         textField.autocorrectionType = .no
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 20))
+        textField.leftViewMode = .always
         //placeholder for the string name
         let placeholder = NSMutableAttributedString(attributedString: NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 15), .foregroundColor: UIColor(white: 1, alpha: 1)]))
         textField.attributedPlaceholder = placeholder
@@ -59,6 +63,8 @@ class LoginView: UIView {
         textField.layer.borderWidth = 5
         textField.layer.borderColor = UIColor.gray.cgColor
         textField.autocorrectionType = .no
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 20))
+        textField.leftViewMode = .always
         //placeholder for the string name
         let placeholder = NSMutableAttributedString(attributedString: NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 15), .foregroundColor: UIColor(white: 1, alpha: 1)]))
         textField.attributedPlaceholder = placeholder
@@ -77,6 +83,7 @@ class LoginView: UIView {
         button.layer.borderColor = UIColor.blue.cgColor
         //size
         button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        button.addTarget(self, action: #selector(loginButtonAction), for: .touchUpInside)
         return button
     }()
     
@@ -90,6 +97,7 @@ class LoginView: UIView {
         button.layer.borderColor = UIColor.blue.cgColor
         //size
         button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        button.addTarget(self, action: #selector(signupButtonAction), for: .touchUpInside)
         return button
     }()
     func mainStackView() -> UIStackView{
@@ -99,7 +107,13 @@ class LoginView: UIView {
         stackView.spacing = 15
         return stackView
     }
+    @objc func loginButtonAction(){
+        print("login button")
+    }
     
+    @objc func signupButtonAction(){
+        print("sign up button")
+    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
