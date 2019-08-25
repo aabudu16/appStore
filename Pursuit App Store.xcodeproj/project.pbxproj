@@ -19,6 +19,7 @@
 		85EBCD7A2312018400DD5A5F /* StackView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD792312018400DD5A5F /* StackView-Extension.swift */; };
 		85EBCD7E2312086100DD5A5F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD7D2312086100DD5A5F /* SignupViewController.swift */; };
 		85EBCD80231208C900DD5A5F /* signupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD7F231208C900DD5A5F /* signupView.swift */; };
+		85EBCD83231323FC00DD5A5F /* PursuitUIImageView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCD82231323FC00DD5A5F /* PursuitUIImageView-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		85EBCD792312018400DD5A5F /* StackView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView-Extension.swift"; sourceTree = "<group>"; };
 		85EBCD7D2312086100DD5A5F /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		85EBCD7F231208C900DD5A5F /* signupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupView.swift; sourceTree = "<group>"; };
+		85EBCD82231323FC00DD5A5F /* PursuitUIImageView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PursuitUIImageView-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				85EBCD742311F5CA00DD5A5F /* UITextField-Extension.swift */,
 				85EBCD772311F78700DD5A5F /* UIButton-Extension.swift */,
 				85EBCD792312018400DD5A5F /* StackView-Extension.swift */,
+				85EBCD82231323FC00DD5A5F /* PursuitUIImageView-Extension.swift */,
 			);
 			path = "Custom Extenstions";
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				85EBCD462311CC3F00DD5A5F /* LoginViewController.swift in Sources */,
 				85EBCD722311CC7600DD5A5F /* loginView.swift in Sources */,
 				85EBCD7E2312086100DD5A5F /* SignupViewController.swift in Sources */,
+				85EBCD83231323FC00DD5A5F /* PursuitUIImageView-Extension.swift in Sources */,
 				85EBCD442311CC3F00DD5A5F /* AppDelegate.swift in Sources */,
 				85EBCD80231208C900DD5A5F /* signupView.swift in Sources */,
 				85EBCD782311F78700DD5A5F /* UIButton-Extension.swift in Sources */,

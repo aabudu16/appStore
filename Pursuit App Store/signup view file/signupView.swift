@@ -33,17 +33,7 @@ class SignupView: UIView {
     }()
     
     let pursuitImage:UIImageView = {
-        let pursuitImage = UIImageView()
-        pursuitImage.image = UIImage(named: "pursuit-logo")
-        pursuitImage.contentMode = .scaleAspectFit
-        pursuitImage.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
-        pursuitImage.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
-        pursuitImage.layer.cornerRadius = pursuitImage.frame.size.height / 2
-        pursuitImage.clipsToBounds = true
-        pursuitImage.layer.borderWidth = 4
-        
-        pursuitImage.layer.borderColor = UIColor.blue.cgColor
-        
+        let pursuitImage = UIImageView(image: "pursuit-logo", borderWidth: 4, borderColor: UIColor.blue.cgColor)
         return pursuitImage
     }()
     
