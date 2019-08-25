@@ -18,7 +18,7 @@ class LoginView: UIView {
         setupView()
     }
     func setupView(){
-        let stackview = mainStackView()
+        let stackview = createStackView(objects: [emailTextField, passwordTextField, loginButton, signupButton])
         
         addSubview(backgroundImage)
         addSubview(stackview)
@@ -56,13 +56,13 @@ class LoginView: UIView {
         button.addTarget(self, action: #selector(signupButtonAction), for: .touchUpInside)
         return button
     }()
-    func mainStackView() -> UIStackView{
-        let stackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, loginButton, signupButton])
-        stackView.axis = .vertical
-        stackView.distribution = .fillProportionally
-        stackView.spacing = 15
-        return stackView
-    }
+//    func mainStackView() -> UIStackView{
+//        let stackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, loginButton, signupButton])
+//        stackView.axis = .vertical
+//        stackView.distribution = .fillProportionally
+//        stackView.spacing = 15
+//        return stackView
+//    }
     @objc func loginButtonAction(){
         loginAction?()
     }
