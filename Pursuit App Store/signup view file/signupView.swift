@@ -8,14 +8,26 @@
 
 import UIKit
 
-class signupView: UIView {
+class SignupView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupSignupView()
     }
-    */
-
+    
+    func setupSignupView(){
+       self.addSubview(backgroundImage)
+        backgroundImage.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+    }
+    
+    let backgroundImage:UIImageView = {
+        var imageView = UIImageView()
+        imageView.image = UIImage(named: "pursuit-image 2")
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }

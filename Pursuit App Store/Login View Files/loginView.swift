@@ -22,7 +22,9 @@ class LoginView: UIView {
         
         addSubview(backgroundImage)
         addSubview(stackview)
+        addSubview(pursuitImageView)
         
+        pursuitImageView.frame = CGRect(x: frame.width - 270, y: 100, width: 150, height: 200)
         backgroundImage.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
         stackview.frame = CGRect(x: 28, y: 500, width: Int(frame.width - 60 ), height: 230)
     }
@@ -32,7 +34,13 @@ class LoginView: UIView {
         backgroundImage.image = UIImage(named: "login image")
         backgroundImage.contentMode = .scaleAspectFill
         return backgroundImage
-        
+    }()
+    
+    let pursuitImageView:UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "pursuit-logo")
+        imageView.contentMode = .scaleAspectFill
+        return imageView
     }()
     
     let emailTextField:UITextField = {
@@ -52,17 +60,17 @@ class LoginView: UIView {
     }()
     
     let signupButton:UIButton = {
-        let button = UIButton(setTitle: "Login", borderWidth: 4, borderColor: UIColor.blue.cgColor)
+        let button = UIButton(setTitle: "Sign up", borderWidth: 4, borderColor: UIColor.blue.cgColor)
         button.addTarget(self, action: #selector(signupButtonAction), for: .touchUpInside)
         return button
     }()
-//    func mainStackView() -> UIStackView{
-//        let stackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, loginButton, signupButton])
-//        stackView.axis = .vertical
-//        stackView.distribution = .fillProportionally
-//        stackView.spacing = 15
-//        return stackView
-//    }
+    //    func mainStackView() -> UIStackView{
+    //        let stackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, loginButton, signupButton])
+    //        stackView.axis = .vertical
+    //        stackView.distribution = .fillProportionally
+    //        stackView.spacing = 15
+    //        return stackView
+    //    }
     @objc func loginButtonAction(){
         loginAction?()
     }

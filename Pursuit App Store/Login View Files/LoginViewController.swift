@@ -35,8 +35,11 @@ class LoginViewController: UIViewController {
     func loginPressed(){
         print("login pressed")
     }
+    
+    // navigates to the signup view controller page when the sign up button is pressed
    func signupPressed(){
-    print("signup pressed")
+    let signupController = SignupViewController()
+    present(signupController, animated: true, completion: nil)
     }
 }
 

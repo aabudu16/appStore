@@ -10,21 +10,15 @@ import UIKit
 
 class SignupViewController: UIViewController {
 
+    var signupView:SignupView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+let signupView = SignupView(frame: self.view.frame)
+      self.signupView = signupView
+        view.addSubview(signupView)
+        signupView.translatesAutoresizingMaskIntoConstraints = false
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
