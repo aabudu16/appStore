@@ -24,7 +24,7 @@ extension UITextField{
         self.layer.borderColor = borderColor
         self.autocorrectionType = .no
         // textview padding from the left
-        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 20))
+        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 30))
         self.leftViewMode = .always
         //placeholder for the string name
         let placeholder = NSMutableAttributedString(attributedString: NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 15), .foregroundColor: UIColor(white: 1, alpha: 1)]))
