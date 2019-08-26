@@ -26,6 +26,11 @@ class LoginView: UIView {
         
         pursuitImageView.frame = CGRect(x: frame.width - 270, y: 100, width: 150, height: 200)
         backgroundImage.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        
+   //     stackview.translatesAutoresizingMaskIntoConstraints = false
+//        stackview.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+//        stackview.topAnchor.constraint(equalTo: self.topAnchor, constant: 520).isActive = true
+//        stackview.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant:50).isActive = true
         stackview.frame = CGRect(x: 28, y: 500, width: Int(frame.width - 60 ), height: 230)
     }
     
@@ -42,6 +47,7 @@ class LoginView: UIView {
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
+   
     
     let emailTextField:UITextField = {
         let textField = UITextField(placeholder: "Enter Email", borderWidth: 5, borderColor: UIColor.gray.cgColor)
@@ -54,13 +60,13 @@ class LoginView: UIView {
     }()
     
     let loginButton:UIButton = {
-        let button = UIButton(setTitle: "Login", borderWidth: 4, borderColor: UIColor.blue.cgColor)
+        let button = UIButton(setTitle: "Login", borderWidth: 4)
         button.addTarget(self, action: #selector(loginButtonAction), for: .touchUpInside)
         return button
     }()
     
     let signupButton:UIButton = {
-        let button = UIButton(setTitle: "Sign up", borderWidth: 4, borderColor: UIColor.blue.cgColor)
+        let button = UIButton(setTitle: "Sign up", borderWidth: 4)
         button.addTarget(self, action: #selector(signupButtonAction), for: .touchUpInside)
         return button
     }()

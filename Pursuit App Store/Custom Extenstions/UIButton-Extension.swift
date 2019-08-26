@@ -10,16 +10,16 @@ import UIKit
 
 extension UIButton{
     
-    public convenience init(setTitle:String, borderWidth:CGFloat, borderColor:CGColor ){
+    public convenience init(setTitle:String, borderWidth:CGFloat){
         self.init()
         self.setTitle(setTitle, for: .normal)
         self.setTitleColor(.black, for: .highlighted)
         self.backgroundColor = .clear
         self.layer.cornerRadius = 10
         self.layer.borderWidth = 4
-        self.layer.borderColor = borderColor
+        self.layer.borderColor = UIColor(red: 65/255, green: 67/255, blue: 225/255, alpha: 1).cgColor
         //size
-        self.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        //self.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         
     }
 }

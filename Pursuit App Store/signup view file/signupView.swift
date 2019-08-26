@@ -15,50 +15,55 @@ class SignupView: UIView {
         setupSignupView()
     }
     
-    func setupSignupView(){
+   private func setupSignupView(){
         let stackView = createStackView(objects: [firstName, lastName, email, password, signupButton])
        self.addSubview(backgroundImage)
        self.addSubview(stackView)
         self.addSubview(pursuitImage)
+        
         backgroundImage.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        
         stackView.frame = CGRect(x: 28, y: 300, width: Int(frame.width - 60 ), height: 300)
-        //pursuitImage.frame = CGRect(x: frame.width - 270, y: 100, width: 150, height: 200)
+        
+        pursuitImage.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        pursuitImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 100).isActive = true
     }
     
-    let backgroundImage:UIImageView = {
+   private let backgroundImage:UIImageView = {
         var imageView = UIImageView()
         imageView.image = UIImage(named: "signup image")
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
-    let pursuitImage:UIImageView = {
+  private  let pursuitImage:UIImageView = {
         let pursuitImage = UIImageView(image: "pursuit-logo", borderWidth: 4, borderColor: UIColor.blue.cgColor)
+        pursuitImage.translatesAutoresizingMaskIntoConstraints = false
         return pursuitImage
     }()
     
-    let firstName:UITextField = {
+   private let firstName:UITextField = {
         let firstName = UITextField(placeholder: "First name", borderWidth: 4, borderColor: UIColor.lightGray.cgColor)
         return firstName
     }()
     
-    let lastName:UITextField = {
+   private let lastName:UITextField = {
         let lastName = UITextField(placeholder: "Last name", borderWidth: 4, borderColor: UIColor.lightGray.cgColor)
         return lastName
     }()
     
-    let email:UITextField = {
+   private let email:UITextField = {
         let email = UITextField(placeholder: "Email", borderWidth: 4, borderColor: UIColor.lightGray.cgColor)
         return email
     }()
     
-    let password:UITextField = {
+   private let password:UITextField = {
         let password = UITextField(placeholder: "Password", borderWidth: 4, borderColor: UIColor.lightGray.cgColor)
         return password
     }()
     
-    let signupButton:UIButton = {
-        let button = UIButton(setTitle: "Sign up", borderWidth: 4, borderColor: UIColor.blue.cgColor)
+   private let signupButton:UIButton = {
+        let button = UIButton(setTitle: "Sign up", borderWidth: 4)
         button.titleLabel?.font = UIFont(name: "Helvetica", size: 25)
         return button
     }()
@@ -66,5 +71,5 @@ class SignupView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
 }

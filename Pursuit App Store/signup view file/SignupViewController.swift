@@ -17,7 +17,9 @@ class SignupViewController: UIViewController {
 let signupView = SignupView(frame: self.view.frame)
       self.signupView = signupView
         view.addSubview(signupView)
-        signupView.translatesAutoresizingMaskIntoConstraints = false
+       // signupView.translatesAutoresizingMaskIntoConstraints = false
+       // signupView.widthAnchor.constraint(equalToConstant: 300).isActive = true
+       // signupView.heightAnchor.constraint(equalToConstant: 600).isActive = true
     }
 
 

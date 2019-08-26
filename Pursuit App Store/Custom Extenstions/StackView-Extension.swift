@@ -17,6 +17,8 @@ extension UIView{
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
         stackView.spacing = 15
+//        stackView.widthAnchor.constraint(equalToConstant: 300).isActive = true
+//        stackView.heightAnchor.constraint(equalToConstant: 300).isActive = true
         return stackView
     }
 }

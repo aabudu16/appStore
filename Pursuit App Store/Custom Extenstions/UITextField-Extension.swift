@@ -30,7 +30,7 @@ extension UITextField{
         let placeholder = NSMutableAttributedString(attributedString: NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 15), .foregroundColor: UIColor(white: 1, alpha: 1)]))
         self.attributedPlaceholder = placeholder
         //size
-        self.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        //self.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         
     }
 }
